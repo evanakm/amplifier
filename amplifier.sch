@@ -11822,12 +11822,13 @@ Source: www.kingbright.com</description>
 <wire x1="2.54" y1="104.14" x2="7.62" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="BRIDGE_A" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="AC1"/>
 <wire x1="55.88" y1="114.3" x2="55.88" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="114.3" x2="55.88" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="114.3" x2="53.34" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="114.3" x2="55.88" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="111.76" x2="40.64" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="S1" gate="G$1" pin="B"/>
 <wire x1="20.32" y1="104.14" x2="20.32" y2="114.3" width="0.1524" layer="91"/>
@@ -11836,6 +11837,9 @@ Source: www.kingbright.com</description>
 <pinref part="R49" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
 <junction x="55.88" y="114.3"/>
+<label x="53.34" y="119.38" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="53.34" y1="119.38" x2="53.34" y2="114.3" width="0.1524" layer="91"/>
+<junction x="53.34" y="114.3"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -11845,15 +11849,29 @@ Source: www.kingbright.com</description>
 <wire x1="78.74" y1="114.3" x2="83.82" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="BRIDGE_C" class="0">
 <segment>
 <pinref part="D15" gate="G$1" pin="C"/>
 <wire x1="96.52" y1="114.3" x2="91.44" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="-"/>
 <wire x1="50.8" y1="106.68" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="106.68" x2="48.26" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="93.98" x2="53.34" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="93.98" x2="96.52" y2="114.3" width="0.1524" layer="91"/>
+<label x="53.34" y="88.9" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="53.34" y1="88.9" x2="53.34" y2="93.98" width="0.1524" layer="91"/>
+<junction x="53.34" y="93.98"/>
+</segment>
+</net>
+<net name="BRIDGE_D" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="+"/>
+<wire x1="60.96" y1="106.68" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
+<label x="83.82" y="106.68" size="1.778" layer="95" xref="yes"/>
+<wire x1="78.74" y1="106.68" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="106.68" x2="83.82" y2="106.68" width="0.1524" layer="91"/>
+<junction x="78.74" y="106.68"/>
 </segment>
 </net>
 </nets>
